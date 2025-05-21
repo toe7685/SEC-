@@ -1,0 +1,228 @@
+Introduction
+This chapter covers the second objective in Domain 5.0, Security Program Management and Oversights, of the CompTIA Security+ exam.
+
+In this chapter, we will look at the elements of effective security governance, investigating all the different stages of risk management, from identification to risk assessment and analysis, and look at calculating loss using Single Loss Expectancy (SLE), Annualized Rate of Occurence (ARO), and Annualized Loss Expectancy (ALE). In the final sections, we will consider the purpose of risk registers, risk tolerance, and risk management strategies with risk reporting and Business Impact Analysis (BIA).
+
+Risk is the probability that an event will happen, but risk can also bring profit. For example, if you place a bet on roulette at a casino, then you could win money. However, it is more likely that risk will result in financial loss. Companies will adopt a risk management strategy to reduce the risk they are exposed to; however, they may not be able to eliminate the risk. In IT, new technology comes out every day and poses new risks to businesses, and therefore, risk management is constantly moving.
+
+This chapter will provide you with an overview of why companies rely on effective security governance to manage their environment to ensure you are prepared to successfully answer all exam questions related to these concepts for your certification.
+
+NOTE
+
+A full breakdown of Exam Objective 5.2 will be provided at the end of the chapter.
+
+Risk Identification
+The first stage in risk management is the identification and classification of the asset. If the asset is a top-secret document, you will handle and store it differently than an asset that is unclassified and freely available on the internet.
+
+For example, if you had 1 kg of trash and placed it outside your front door at night, you would be certain that, in the morning, it would still be there. However, if the asset was 1 kg of 24-carat gold and you left it outside your house at night, it would probably not be there in the morning. Therefore, we would prioritize protecting the gold as it is a valuable asset. We would not protect the trash.
+
+There are three key elements to risk assessment:
+
+Risk: The risk is the probability that an event will occur that results in financial loss or loss of service. In the preceding example, the probability that the trash or gold would be taken. In IT security, it is the probability your system could be hacked or data stolen.
+Threat: A threat is someone or something that wants to inflict loss on a company by exploiting vulnerabilities. In the preceding example, it’s the person who takes the gold. In IT security, it could be a hacker that wants to steal a company’s data.
+Vulnerability: This is a weakness that helps an attacker exploit a system. In the preceding example, it is the fact that outside your front door is not a secured area. In IT security, it could be a weakness in a software package or a misconfiguration of a firewall.
+Risk Assessment
+Risk assessment is a systematic and structured process where the organization identifies, analyzes, and evaluates risks associated with potential threats and vulnerabilities in order to make informed decisions and prioritize resource allocation effectively. Let’s look at different types of risk assessment:
+
+Ad hoc risk assessment: Ad hoc assessments are sporadic and arise in response to specific events or perceived threats. This type of assessment is tailored to focus on the immediate dangers and is characterized by its flexibility and swift implementation.
+Recurring risk assessment: Recurring assessments are routine and scheduled to occur at predetermined intervals. This approach ensures that the organization’s security posture is regularly monitored, evolving threats are detected, and changes in the environment or operations are addressed. Regularly scheduled assessments enable organizations to stay vigilant and maintain an updated understanding of their risk profile, fostering a proactive security culture.
+One-time risk assessment: One-time assessments are conducted for specific scenarios or projects, often at the inception of a new venture, system implementation, or organizational change. This approach provides a detailed one-time view of the risks associated with a particular endeavor.
+Continuous risk assessment: Continuous risk assessment goes above and beyond the periodic nature of recurring assessments, characterized by real-time monitoring and the analysis of risks. This dynamic approach integrates risk assessment seamlessly into the organization’s daily operations, allowing for instantaneous detection and response to threats as they arise. Continuous assessment is vital in today’s fast-paced and dynamic threat landscape as it empowers organizations to stay a step ahead of potential security breaches.
+Risk Analysis
+Risk analysis is a pivotal process for identifying and managing potential risks that could impact an organization adversely. The process brings together several key components, such as probability, likelihood, exposure factor, and impact, each playing a crucial role in giving a picture of the overall risk landscape. There are different types of risk analysis that focus on different modes of looking at risk, qualitative or quantitative, serving different purposes in the risk management strategy. To allow quantitative analysis, there are methods of quantifying different aspects of risk in order to help businesses make informed decisions. These concepts are discussed here:
+
+Qualitative risk analysis: Qualitative risk analysis uses subjective judgment to categorize risks as high, medium, or low, focusing on the potential impact, such as the likelihood of occurrence. One of the aspects of qualitative risk analysis is a risk matrix/heat map, which shows the severity of a risk in a diagrammatic form, as shown in Figure 24.1:
+
+Figure 24.1: Risk matrix
+
+The preceding figure shows the likelihood on the X axis and impact on the Y axis, with the ranges of low, medium, high, and very high. The areas in red, where both impact and likelihood are very high, would cause severe damage to the company. Dark pink, where one is lower than the other, would still signify a high risk. The lighter pink and green would indicate a medium risk. The darker green and the very dark green would represent a low risk. In a grayscale image, the higher the number, the higher the risk; the lower the number, the lower the risk. This is an effective way to present a risk analysis to senior management.
+
+Quantitative risk analysis: Quantitative risk analysis, on the other hand, assigns numerical values to risks identified as high in qualitative analysis. It quantifies and creates a precise measurement of the probability and the impact of risks, helping to determine the potential cost and formulate data-driven mitigation strategies. It provides a deeper understanding of the risk for more informed decision-making. One aspect of this is to calculate equipment loss, the process of which is explained in the following section.
+Calculating Equipment Loss
+Equipment that is essential for the running of your organization, such as computers and hardware servers, is often insured against loss such as theft or accidental breakage. When determining potential equipment loss and contemplating additional insurance, the following concepts are instrumental:
+
+Single Loss Expectancy (SLE): SLE represents the monetary value of the loss of a single item. Losing a laptop worth $1,000 while traveling, for instance, implies an SLE of $1,000.
+Annualized Rate of Occurrence (ARO): ARO refers to the number of items lost annually. For example, if an IT team experiences the loss of six laptops in a year, the ARO is 6.
+Annualized Loss Expectancy (ALE): This is calculated by taking the SLE and multiplying it by the ARO and represents the total expected loss per year, providing a foundation for insurance and risk management decisions.
+Consider the following example. A corporation loses 300 laptops valued at $850 each per year. If the monthly insurance premium to cover these losses is $21,350, the organization needs to assess whether this cost is justified.
+
+The formula to determine this loss expectancy is ALE = SLE x ARO. So, in this example, this would be calculated as follows:
+
+ALE = $850 x 300 = $256,200 annually
+
+Insurance premiums = 12 x $21,350 = $255,000 annually
+
+By leveraging these calculations, organizations can accurately assess whether the cost of additional insurance aligns with the potential risks and losses. It might be that they have mitigated the risk with better equipment security policies and expect less loss for next year. In this case, the company would need a much lower insurance premium to be cost-effective.
+
+Probability: Probability is a fundamental concept in risk analysis that describes the chance of a specific event occurring. It is quantified as a number between 0 and 10; the closer the number is to 10, the higher the probability that the event will occur. Assessing probability helps determine the frequency, or the number of times an event will happen in a given timeframe, with which a risk event might occur, enabling organizations to allocate resources more effectively to manage it.
+Likelihood: Likelihood is synonymous with probability in risk analysis, representing the possibility of a risk materializing. It is often expressed in qualitative terms, such as high, medium, or low, providing an intuitive grasp of the risk’s occurrence.
+Exposure Factor (EF): EF is a measure of the magnitude of loss or damage that can be expected if a risk event occurs. It is represented as a percentage, reflecting the portion of an asset’s value likely to be affected. By determining the EF, organizations can assess the extent of damage a specific risk can inflict to produce more accurate risk valuations.
+Impact: Impact is the consequence or the effect that a risk event has on an organization or a specific asset. It is often quantified monetarily, representing the potential loss in value. Impact assessment is crucial, as it provides insights into the severity of the risk and allows organizations to determine the necessary controls and response strategies to mitigate the risk.
+Take the example of a financial institution, Fin123, operating in a competitive market. Fin123 uses an online transaction system, which is identified to have a potential security vulnerability. The IT security team at Fin123 assesses the probability of a security breach to be 0.1, or 10%, each year due to this vulnerability, after analyzing the cyber threats and past incidents. In terms of likelihood, the risk is categorized as “Low” due to the implemented security measures.
+
+If such a security breach were to occur, it is estimated that the impact would be a financial loss to Fin123 of around $500,000 due to potential regulatory fines, loss of customer trust, and remediation costs. Given the nature of the vulnerability, the security team evaluates that approximately 40% of the transaction system could be exposed in the event of a breach, leading to the exposure factor being 0.4 or 40%.
+
+By combining these elements, Fin123 can conduct risk analysis assess the potential risk as follows:
+
+Impact = $500,000
+
+Probability = 0.1
+
+Exposure factor = 0.4
+
+Considering the probability and exposure factor, the effective impact on the organization would be the following:
+
+Effective impact = Impact x Probability x Exposure factor
+
+Effective impact = $500,000 x 0.1 x 0.4
+
+Effective impact = $20,000
+
+By understanding the interplay between probability, likelihood, impact, and exposure factor, Fin123 can take a calculated approach to manage this specific risk. The effective impact calculation informs Fin123 about the potential loss due to this vulnerability so that the organization can devise efficient risk mitigation strategies and resource allocation to fortify the transaction system against security breaches. The exposure factor in this scenario helps Fin123 understand the extent of the system that could be affected, and subsequently develop more precise and targeted protective measures.
+
+Risk Register
+A risk register is a crucial document in risk management processes that provides a detailed log of risks identified during a risk assessment. It includes Key Risk Indicators (KRIs), identifies risk owners, and specifies the risk threshold, helping organizations to monitor and manage risks effectively. Let’s look at each of these in turn:
+
+KRIs: KRIs are an essential element of a risk register. They serve as metrics that provide an early signal of increasing risk exposure in various areas of the organization. KRIs act as early indicators of risk and so are instrumental in anticipating potential problems and allowing organizations to enact proactive measures to mitigate such risks. A KRI in a financial institution could be the number of failed transactions in each period, identifying potential issues in the transaction process that could lead to more significant risks if not addressed promptly.
+Risk owners: Assigning risk owners is a fundamental step in constructing a risk register. A risk owner is an individual or team assigned the task of risk management. The risk owner is responsible for the implementation of risk mitigation strategies and monitoring the effectiveness of these strategies over time. For example, in a manufacturing firm, the production manager could be designated as the risk owner for operational risks associated with equipment failure or production delays. Establishing clear ownership ensures that there is a designated authority responsible for addressing and managing each identified risk.
+Risk threshold: The risk threshold represents the level of risk that an organization is willing to accept or tolerate. Establishing a risk threshold is vital for maintaining a balance between risk and reward and ensuring that the organization does not undertake excessive risks that could jeopardize its objectives. If a risk surpasses the threshold level, it demands immediate attention and, possibly, a re-evaluation of the strategies and controls in place.
+Risk Tolerance
+Risk tolerance is the organization’s personalized threshold for embracing the unknown. It’s a finely tuned balance that guides strategic decisions to combine financial strength with market dynamics and innovation pursuits.
+
+A venture capitalist demonstrates a high risk tolerance by investing substantial funds in a start-up with groundbreaking ideas but no proven track record. In taking this risk, they accept the possibility that the entire investment may be lost in pursuit of substantial returns.
+
+Similarly, a retiree opting to put their savings into fixed deposits or government bonds showcases a low risk tolerance by prioritizing capital preservation and consistent (albeit smaller) returns over potential high gains associated with higher risk.
+
+Risk Appetite
+A critical component of security governance is risk appetite, which is the level of risk an organization is willing to bear in pursuit of its objectives. Risk appetite sets the tone for venturing into new territories, while risk tolerance serves as the safety net, indicating when it’s time to pull back to protect the organization’s stability and objectives. Risk appetite usually falls into three categories, expansionary, conservative, and neutral, as follows:
+
+Expansionary risk appetite: Organizations with an expansionary risk appetite typically embrace higher levels of risk in an effort to foster innovation and gain a competitive edge. These organizations often prioritize growth and expansion and seek higher returns and market shares over stringent security protocols, potentially exposing them to a spectrum of threats.
+Conservative risk appetite: In contrast to those with expansionary appetites, organizations with a conservative risk appetite prioritize security and risk mitigation over aggressive growth strategies. They have a carefully planned security control approach to risk management and often reject opportunities that are deemed too risky.
+Neutral risk appetite: Organizations with a neutral risk appetite strike a balance between expansionary and conservative approaches. They assess each opportunity on a case-by-case basis, accepting only risks that are manageable and align with their strategic objectives. They face potential conflicts between business units with differing risk appetites as one unit might be seeking growth opportunities but be held back by another unit that deems ventures too risky.
+Risk Management Strategies
+Risk management is an integral component of successful organizational functioning, aimed at identifying, assessing, and addressing risks. By employing effective risk management strategies, organizations can enhance decision-making, improve performance, and preserve value. This section explores various risk management approaches, each of which offers a distinct way to deal with potential hazards, as follows:
+
+Risk transference: In this approach, significant risks are allocated to a third party, often through insurance or outsourcing your IT systems. For example, companies recognizing the potential damages from a road traffic accident will purchase car insurance to transfer the financial risk to the insurer. Similarly, businesses are increasingly adopting cybersecurity insurance to cover potential financial losses, legal fees, and investigation costs stemming from cyberattacks.
+Risk acceptance: Risk acceptance is the acknowledgment of a specific risk and the deliberate decision not to act to mitigate against the risk as it is deemed too low.
+For example, say an organization located in Scotland (a country with a history of no earthquakes) decides not to invest in earthquake insurance for its premises. In this way, they accept the associated risk, having determined low probability and minimal consequences in case of occurrence.
+
+Risk exemption: Exemption refers to the act of relieving an individual, group, or entity from a specific obligation, rule, or policy that is generally applied across the organization. Exemptions are typically granted when adherence to a specific rule or policy is impractical or unfeasible. They are usually formal and documented and have a specified duration, and they may require approval from regulatory or governing bodies on a case-by-case basis.
+Risk exception: An exception in risk management pertains to an approved deviation from a set policy or standard. This deviation is typically temporary and is allowed due to the absence of a viable alternative, often with compensatory controls to mitigate associated risks.
+Risk avoidance: When the identified risk is too substantial, a decision may be made to abstain from the risky activity altogether. A practical example is an individual deciding not to jump from a considerable height without safety measures, due to the extreme risk involved.
+Risk mitigation: Risk mitigation is a comprehensive strategy wherein identified risks are analyzed to determine their potential impacts, and suitable measures are employed to reduce the risk levels. An inherent risk is the raw risk that you face before you try to mitigate it. An example of risk mitigation would be installing antivirus software on company devices to protect against viruses. Even after you mitigate a risk, there may be a small amount of risk remaining. This is called residual risk.
+Risk Reporting
+Risk reporting is the process of systematically gathering, analyzing, and presenting information about risks within an organization. It serves as a valuable tool for decision-makers, helping them assess the potential impact of various risks and allocate resources judiciously. Here are some key reasons why risk reporting is essential:
+
+Informed decision-making: Risk reports provide decision-makers with timely and relevant information about potential risks. Armed with this knowledge, they can make informed decisions that minimize negative impacts and maximize opportunities.
+Stakeholder confidence: Effective risk reporting enhances stakeholder confidence. Investors, customers, and partners are more likely to trust organizations that transparently disclose their risk management strategies and outcomes.
+Compliance and regulation: Many industries are subject to stringent regulatory requirements. Proper risk reporting ensures compliance with these regulations, reducing the risk of legal repercussions.
+
+Business Impact Analysis
+BIA is carried out by an auditor with the objective of identifying a single point of failure. The auditor checks for any component whose failure would significantly impair or halt a company’s operations. The auditor evaluates the potential impact of disruptions, considering aspects such as loss of sales, additional expenses such as regulatory fines, and the potential procurement of new equipment. BIA primarily focuses on understanding the consequences, both operational and financial, that may follow a disaster or disruption. Some key concepts of BIA include the following:
+
+Recovery Point Objective (RPO): The RPO is determined by identifying the maximum age of files or data that an organization can afford to lose without experiencing unacceptable consequences. It’s fundamentally related to data backup frequency. For instance, if a company sets an RPO of three hours, it means the organization must perform backups at least every three hours to prevent any data loss beyond this acceptable threshold.
+Recovery Time Objective (RTO): The RTO is the time when a business aims to restore its operations to an operational level after a disruption. In a practical scenario, if a disruption occurs at 1:00 P.M. and the RPO is set at three hours, the organization aims to have its operations restored by 4:00 P.M. If the restoration process extends beyond the defined RPO, it can potentially have detrimental effects on the business and lead to loss of revenue, reputation, and customer trust.
+Mean Time to Repair (MTTR): MTTR signifies the average duration needed to restore a malfunctioned system to its optimal operating condition. For instance, if a vehicle experiences a breakdown at 2:00 P.M. and its repair is completed by 4:00 P.M., this yields an MTTR of two hours, denoting a relatively swift resolution.
+Mean Time Between Failures (MTBF): MTBF stands as a paramount metric in evaluating and enhancing the reliability of systems and components. It provides insights into the average time a system or component operates without failure. It acts as a critical indicator of the inherent reliability and endurance of equipment or systems, providing a foundational basis for predictive maintenance and system optimization. Consider a scenario where a car is purchased on January 1 and it experiences breakdowns on January 2, 5, 6, and 8. In this case, the MTBF would indeed be low, two days, because there have been four failures in eight days. This implies the car is not reliable. A high MTBF is desirable as it denotes fewer failures and enhanced reliability. Thus, for a substantial investment, consumers would logically expect a product with a higher MTBF, reflecting superior reliability and value.
+Summary
+This chapter covered the core elements of effective security governance and its crucial role in the management of an organization. This included an exploration of risk identification, assessment, and analysis, as well as a review of risk registers, risk tolerance, and risk management strategies with risk reporting. We also examined aspects of BIA such as RPO, RTO, MTBF, and MTTR, and how to calculate the annual loss expectancy.
+
+The knowledge gained in this chapter will prepare you to answer any questions relating to Exam Objective 5.2 in your CompTIA Security+ certification exam.
+
+The next chapter will be Chapter 25, Explain the processes associated with third-party risk assessment and management.
+
+Exam Objectives 5.2
+Explain elements of the risk management process.
+
+Risk identification: Identifying a risk
+Risk assessment: Assessing the impact or risk:
+Ad hoc risk assessment: Spontaneous evaluation of a risk
+Recurring risk assessment: Regularly scheduled risk evaluations conducted at set intervals
+One-time risk assessment: Occasional, project-specific risk evaluations
+Continuous risk assessment: Ongoing, automated monitoring and updating of risk factor
+Risk analysis:
+Qualitative risk analysis: Subjective evaluation based on non-numeric factors
+Quantitative risk analysis: Data-driven assessment using numeric values and calculations
+Single Loss Expectancy (SLE): Estimation of potential loss from a single risk occurrence
+Annualized Loss Expectancy (ALE): Expected annual loss from a specific risk
+Annualized Rate of Occurrence (ARO): Average frequency of a risk happening
+Probability: Likelihood of a specific risk event occurring.
+Likelihood: The chance of a risk event taking place
+Exposure factor: Proportion of asset loss in case of a risk event
+Impact: The repercussions and consequences of a risk event
+Risk register: A comprehensive record of identified risks and their details:
+Key risk indicators: Critical metrics used to gauge potential risks
+Risk owners: Individuals responsible for managing specific risks
+Risk threshold: The predefined limit at which a risk becomes unacceptable
+Risk tolerance: The organization’s capacity to withstand and manage risks
+Risk appetite: The amount of risk that an organization can bear:
+Expansionary: A willingness to embrace risk for potential gains
+Conservative: A cautious approach, minimizing risk exposure
+Neutral: A balanced stance regarding risk tolerance
+Risk management strategies:
+Transfer: Shifting risk responsibility to external parties or insurance
+Accept: Acknowledging and tolerating the risk without active intervention:
+Exemption: Granting specific situations immunity from standard risk protocols
+Exception: Allowing deviations from regular risk procedures under special circumstances
+Avoid: Preventing or circumventing the risk entirely through proactive measures
+Mitigate: Implementing measures to reduce the impact of the risk
+Risk reporting: Communicating the status of identified risks to stakeholders
+Business impact analysis:
+Recovery Time Objective (RTO): The targeted time for full system recovery after an incident
+Recovery Point Objective (RPO): The specific point in time to which data must be restored following an event
+Mean Time to Repair (MTTR): The average duration needed to fix a system or component after it fails
+Mean Time Between Failures (MTBF): The average interval between system or component failures
+Chapter Review Questions
+The following questions are designed to check that you have understood the information in the chapter. For a realistic practice exam, please check the practice resources in our exclusive online study tools (refer to Chapter 29, Accessing the online practice resources for instructions to unlock them). The answers and explanations to these questions can be found via this link.
+
+Which of the following is a phase in risk management during which potential risks are determined?
+Risk assessment
+Risk identification
+Risk mitigation
+Risk monitoring
+Which type of risk assessment is performed to monitor and assess risks in real-time and is most effective for instantaneous detection of issues?
+Ad hoc
+Scheduled
+Continuous
+Recurring
+Which type of risk assessment typically occurs at regular and scheduled intervals?
+One-time
+Ad-hoc
+Continuous
+Recurring
+In risk management strategies, which analytical approach quantifies risk by applying numerical values, statistical methods, and calculations such as annualized loss expectancy (ALE) to measure and assess the impact of risk?
+Quantitative risk analysis
+Qualitative risk analysis
+Subjective loss expectancy analysis
+Exposure factor
+Which risk analysis methodology assesses the potential impacts and likelihoods of risks by utilizing subjective insights and evaluations, without emphasizing the computation of probable financial loss?
+Qualitative risk analysis
+Quantitative risk analysis
+Risk magnitude evaluation
+Risk impact analysis
+A company experienced the repeated theft of computer systems valued at $10,000 five times in the last year. What is the annualized loss expectancy (ALE) for this risk event?
+$2,000
+$10,000
+$50,000
+$20,000
+Which risk management strategy focuses on mitigating risk through insurance or outsourcing your IT?
+Acceptance
+Transfer
+Mitigation
+Avoidance
+Which of the following risk management strategies involves the acknowledgment of a risk where no proactive measures are taken to address it, due to its negligible impact?
+Exemption
+Exception
+Acceptance
+Transfer
+Which statement BEST describes the critical difference between recovery time objective and recovery point objective within the context of business impact analysis?
+Recovery time objective refers to the maximum allowable downtime, while recovery point objective refers to the maximum allowable data loss.
+Recovery time objective refers to the frequency of system failures, while recovery point objective refers to the maximum allowable downtime.
+Recovery time objective refers to the maximum allowable data loss, while recovery point objective refers to the maximum allowable downtime.
+Recovery time objective and recovery point objective both refer to the maximum allowable downtime but are used in different contexts.
+In business impact analysis, which component is crucial for determining the acceptable data loss and downtime in IT systems?
+Mean time between failures
+Recovery point objective and recovery time objective
+Data frequency analysis
+Impact acceptance threshold
+
